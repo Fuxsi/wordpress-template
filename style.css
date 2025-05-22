@@ -10,12 +10,138 @@ Author URI: https://uniqsoft.pl
 
 */
 
-body{
-  header{
-    .logo{
-      img{
-        width: 150px;
-      }
-    }
-  }
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+    background-color: pink;
+    color: black;
 }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: rgb(74, 250, 250);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    
+    
+}
+
+header {
+    text-align: center;
+    padding: 2em 0;
+    background-image: url(https://cdn.pixabay.com/photo/2023/02/01/21/40/pink-7761356_1280.png);
+    background-image: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 5px dashed rgb(39, 132, 255);
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    border-bottom: 2px solid black;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+#projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+#projects ul li {
+    margin-bottom: 0.5em;
+}
+
+#projects ul li a {
+    text-decoration: none;
+    color: blue;
+}
+
+#projects ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-image: url(https://cdn.pixabay.com/photo/2023/02/01/21/40/pink-7761356_1280.png);
+    background-image: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-top: 20px;
+    border: 3px dashed rgb(39, 132, 255);
+}
+
+.a {
+    text-decoration: none;
+    color: rgb(162, 0, 255);
+}
+
+.a::before {
+    content: "🐾";
+}
+
+.b {
+    text-decoration: none;
+    color: blue;
+}
+
+.b::before {
+    content: "🐾";
+}
+
+.c {
+    text-decoration: none;
+    color: blue;
+}
+
+.c::before {
+    content: "🐾";
+}
+
+@media (width >= 1920px) {
+
+}
+@media (1200px <= width <= 1919px) {
+
+}
+
+@media (768px <= width <= 767px) {
+    
+}
+
+footer p {
+  animation-duration: 5s;
+  animation-name: slide-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slide-in{
+    from {
+        transform: translateX(-20%)
+    }
+    to {
+        transform: translateX(20%)
+    }
+}
+
+
