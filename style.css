@@ -1,0 +1,21 @@
+/*  
+
+Theme Name: WordPress Ada
+
+Theme URI: 
+
+Author: Adrianna
+
+Author URI: https://uniqsoft.pl
+
+*/
+
+body{
+  header{
+    .logo{
+      img{
+        width: 150px;
+      }
+    }
+  }
+}
