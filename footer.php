@@ -1,6 +1,6 @@
 	<?php wp_footer(); ?>
 		<footer>
-					<p>&copy; 2025 Moje Pierwsze Portfolio</p>
+					<?php echo esc_html( get_field('Stopka') ); ?>
 		</footer>
 </body>
 </html>

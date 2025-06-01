@@ -1,13 +1,14 @@
 <?php /* Template Name: Kontakt */ ?>
 <?php get_header(); ?>
-
-<div class="container"> 
+<?php if(have_posts()) : ?>
+	<?php while(have_posts()) : the_post(); ?>
+		<div class="container"> 
  
-            <section id="contact">
+             <section id="contact"<?php the_field("Formularz"); ?>>
                 <h2>Skontaktuj się ze mną!</h2>
                     <form action="action.php" method="post">
                         <h3>Napisz do mnie na maila</h3>
-                        <p><a href="#">📧</a><input type="email" name="email" placeholder="Wpisz swojego maila"></p>
+                        <p><a href="#">📧</a></p>
                         <button type="submit">Wyślij</button>
                         <button type="reset">Resetuj</button>
                     </form>
@@ -18,4 +19,15 @@
             </section>
            
 </div>
+	<?php endwhile; ?>
+	<?php the_posts_pagination( array(
+		'prev_text'          => __( '<' ),
+		'next_text'          => __( '>' ),
+	) );
+	?>
+	<?php else : get_template_part( 'content', 'none' ); ?>
+<?php endif; ?>
+<?php get_footer(); ?>
+
+
 
